@@ -22,6 +22,10 @@
 		91C8A8E616583DD900E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
 		91C8A8EB16583DD900E2CDA1 /* CAVAlertViewFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */; };
 		91C8A8ED16583DD900E2CDA1 /* CAVAlertViewFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */; };
+		91C8A8F516583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
+		91C8A8F616583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
+		91C8A8FD165840B200E2CDA1 /* CAVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */; };
+		91C8A8FE165840B200E2CDA1 /* CAVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +63,10 @@
 		91C8A8E916583DD900E2CDA1 /* CAVAlertViewFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAVAlertViewFramework-Prefix.pch"; sourceTree = "<group>"; };
 		91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAVAlertViewFramework.h; sourceTree = "<group>"; };
 		91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAVAlertViewFramework.m; sourceTree = "<group>"; };
+		91C8A8F316583FD900E2CDA1 /* CAVAlertViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVAlertViewFactory.h; sourceTree = "<group>"; };
+		91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAVAlertViewFactory.m; sourceTree = "<group>"; };
+		91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVAlertView.h; sourceTree = "<group>"; };
+		91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAVAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 		91C8A8BD16583D8C00E2CDA1 /* CAVAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				91C8A8F216583F9E00E2CDA1 /* Classes */,
 				91C8A8C616583D8C00E2CDA1 /* CAVAppDelegate.h */,
 				91C8A8C716583D8C00E2CDA1 /* CAVAppDelegate.m */,
 				91C8A8CF16583D8C00E2CDA1 /* CAVViewController.h */,
@@ -156,6 +165,17 @@
 				91C8A8E916583DD900E2CDA1 /* CAVAlertViewFramework-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91C8A8F216583F9E00E2CDA1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				91C8A8F316583FD900E2CDA1 /* CAVAlertViewFactory.h */,
+				91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */,
+				91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */,
+				91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +267,8 @@
 				91C8A8C416583D8C00E2CDA1 /* main.m in Sources */,
 				91C8A8C816583D8C00E2CDA1 /* CAVAppDelegate.m in Sources */,
 				91C8A8D116583D8C00E2CDA1 /* CAVViewController.m in Sources */,
+				91C8A8F516583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */,
+				91C8A8FD165840B200E2CDA1 /* CAVAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C8A8ED16583DD900E2CDA1 /* CAVAlertViewFramework.m in Sources */,
+				91C8A8F616583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */,
+				91C8A8FE165840B200E2CDA1 /* CAVAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
