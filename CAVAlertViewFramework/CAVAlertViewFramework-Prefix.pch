@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CAVAlertViewFramework' target in the 'CAVAlertViewFramework' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
