@@ -20,7 +20,7 @@ typedef void (^CAVAlertViewCompletionBlock)(NSInteger selectedButtonIndex,id cus
                        cancelButton:(NSString *)cancel
                   otherButtonTitles:(NSArray *)others // (NSString *)
                          completion:(CAVAlertViewCompletionBlock)completion;
-// custom UI
+// custom UI Convenience
 + (void)showCAVAlert:(CAVAlertView *)customAlert
       withCompletion:(CAVAlertViewCompletionBlock)completion;
 @end

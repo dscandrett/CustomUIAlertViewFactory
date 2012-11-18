@@ -7,6 +7,7 @@
 //
 
 #import "CAVDemoAlert.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface UIView(xibLoading)
 + (UIView *)loadFromXib;
@@ -29,6 +30,7 @@
 + (CAVDemoAlert *)demoAlert {
     CAVDemoAlert *demo = (CAVDemoAlert *)[CAVDemoAlert loadFromXib];
     demo.frame = CGRectMake(0.0f, 0.0f, 200.0f, 200.0f);
+    demo.layer.cornerRadius = 4.0f;
     return demo;
 }
 
