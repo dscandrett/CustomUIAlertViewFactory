@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9136AD7316593E1000D6F056 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B716583D8C00E2CDA1 /* UIKit.framework */; };
+		9136AD7516593E1600D6F056 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136AD7416593E1600D6F056 /* QuartzCore.framework */; };
+		9136AD7616593E3500D6F056 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136AD7416593E1600D6F056 /* QuartzCore.framework */; };
+		9136AD7716593E3E00D6F056 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */; };
 		91C8A8B816583D8C00E2CDA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B716583D8C00E2CDA1 /* UIKit.framework */; };
 		91C8A8BA16583D8C00E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
 		91C8A8BC16583D8C00E2CDA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */; };
@@ -17,8 +21,7 @@
 		91C8A8CC16583D8C00E2CDA1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8CB16583D8C00E2CDA1 /* Default@2x.png */; };
 		91C8A8CE16583D8C00E2CDA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8CD16583D8C00E2CDA1 /* Default-568h@2x.png */; };
 		91C8A8D116583D8C00E2CDA1 /* CAVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8D016583D8C00E2CDA1 /* CAVViewController.m */; };
-		91C8A8D416583D8C00E2CDA1 /* CAVViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8D216583D8C00E2CDA1 /* CAVViewController_iPhone.xib */; };
-		91C8A8D716583D8C00E2CDA1 /* CAVViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8D516583D8C00E2CDA1 /* CAVViewController_iPad.xib */; };
+		91C8A8D416583D8C00E2CDA1 /* CAVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8D216583D8C00E2CDA1 /* CAVViewController.xib */; };
 		91C8A8E616583DD900E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
 		91C8A8EB16583DD900E2CDA1 /* CAVAlertViewFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */; };
 		91C8A8ED16583DD900E2CDA1 /* CAVAlertViewFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */; };
@@ -42,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9136AD7416593E1600D6F056 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91C8A8B316583D8C00E2CDA1 /* CAVAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAVAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C8A8B716583D8C00E2CDA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91C8A8B916583D8C00E2CDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +61,7 @@
 		91C8A8CD16583D8C00E2CDA1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		91C8A8CF16583D8C00E2CDA1 /* CAVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAVViewController.h; sourceTree = "<group>"; };
 		91C8A8D016583D8C00E2CDA1 /* CAVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAVViewController.m; sourceTree = "<group>"; };
-		91C8A8D316583D8C00E2CDA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CAVViewController_iPhone.xib; sourceTree = "<group>"; };
-		91C8A8D616583D8C00E2CDA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CAVViewController_iPad.xib; sourceTree = "<group>"; };
+		91C8A8D316583D8C00E2CDA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CAVViewController.xib; sourceTree = "<group>"; };
 		91C8A8E516583DD900E2CDA1 /* libCAVAlertViewFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCAVAlertViewFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C8A8E916583DD900E2CDA1 /* CAVAlertViewFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAVAlertViewFramework-Prefix.pch"; sourceTree = "<group>"; };
 		91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAVAlertViewFramework.h; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9136AD7616593E3500D6F056 /* QuartzCore.framework in Frameworks */,
 				91C8A8B816583D8C00E2CDA1 /* UIKit.framework in Frameworks */,
 				91C8A8BA16583D8C00E2CDA1 /* Foundation.framework in Frameworks */,
 				91C8A8BC16583D8C00E2CDA1 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9136AD7716593E3E00D6F056 /* CoreGraphics.framework in Frameworks */,
+				9136AD7516593E1600D6F056 /* QuartzCore.framework in Frameworks */,
+				9136AD7316593E1000D6F056 /* UIKit.framework in Frameworks */,
 				91C8A8E616583DD900E2CDA1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +120,7 @@
 		91C8A8B616583D8C00E2CDA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9136AD7416593E1600D6F056 /* QuartzCore.framework */,
 				91C8A8B716583D8C00E2CDA1 /* UIKit.framework */,
 				91C8A8B916583D8C00E2CDA1 /* Foundation.framework */,
 				91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */,
@@ -128,8 +136,7 @@
 				91C8A8C716583D8C00E2CDA1 /* CAVAppDelegate.m */,
 				91C8A8CF16583D8C00E2CDA1 /* CAVViewController.h */,
 				91C8A8D016583D8C00E2CDA1 /* CAVViewController.m */,
-				91C8A8D216583D8C00E2CDA1 /* CAVViewController_iPhone.xib */,
-				91C8A8D516583D8C00E2CDA1 /* CAVViewController_iPad.xib */,
+				91C8A8D216583D8C00E2CDA1 /* CAVViewController.xib */,
 				91C8A8BE16583D8C00E2CDA1 /* Supporting Files */,
 			);
 			path = CAVAlertView;
@@ -252,8 +259,7 @@
 				91C8A8CA16583D8C00E2CDA1 /* Default.png in Resources */,
 				91C8A8CC16583D8C00E2CDA1 /* Default@2x.png in Resources */,
 				91C8A8CE16583D8C00E2CDA1 /* Default-568h@2x.png in Resources */,
-				91C8A8D416583D8C00E2CDA1 /* CAVViewController_iPhone.xib in Resources */,
-				91C8A8D716583D8C00E2CDA1 /* CAVViewController_iPad.xib in Resources */,
+				91C8A8D416583D8C00E2CDA1 /* CAVViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +299,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		91C8A8D216583D8C00E2CDA1 /* CAVViewController_iPhone.xib */ = {
+		91C8A8D216583D8C00E2CDA1 /* CAVViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				91C8A8D316583D8C00E2CDA1 /* en */,
 			);
-			name = CAVViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		91C8A8D516583D8C00E2CDA1 /* CAVViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91C8A8D616583D8C00E2CDA1 /* en */,
-			);
-			name = CAVViewController_iPad.xib;
+			name = CAVViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -454,6 +452,7 @@
 				91C8A8EF16583DD900E2CDA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

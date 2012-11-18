@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CAVViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+- (IBAction)doShowStandardAlert:(UIButton *)sender;
+- (IBAction)doShowCustomAlert:(UIButton *)sender;
 @end
