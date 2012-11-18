@@ -36,17 +36,20 @@
     self.completionBlock = completion;
     
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIView *firstChild = [window subviews][0];
     if (!_mask) {
-        _mask = [[UIView alloc] initWithFrame:window.frame];
+        _mask = [[UIView alloc] initWithFrame:firstChild.bounds];
+        _mask.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _mask.backgroundColor = [UIColor blackColor];
         _mask.alpha = 0.0f;
     }
-    [window addSubview:_mask];
+    [firstChild addSubview:_mask];
     
-    self.center = window.center;
+    self.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    self.center = CGPointMake(firstChild.bounds.size.width / 2, firstChild.bounds.size.height / 2);
     self.frame = CGRectIntegral(self.frame);
-    [window addSubview:self];
-    
+    [firstChild addSubview:self];
+
     CAKeyframeAnimation *anim = [self bubbleAnimation];
     [self.layer addAnimation:anim forKey:nil];
     
