@@ -11,7 +11,6 @@
 #import "CAVAlertViewFactory.h"
 
 @class CAVAlertView;
-@class CAVAlertViewFactory;
 
 @protocol CAVAlertViewProtocol <NSObject>
 @required

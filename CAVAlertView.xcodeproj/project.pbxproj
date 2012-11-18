@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9136AD7316593E1000D6F056 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B716583D8C00E2CDA1 /* UIKit.framework */; };
-		9136AD7516593E1600D6F056 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136AD7416593E1600D6F056 /* QuartzCore.framework */; };
 		9136AD7616593E3500D6F056 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136AD7416593E1600D6F056 /* QuartzCore.framework */; };
-		9136AD7716593E3E00D6F056 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */; };
-		9136AD781659404E00D6F056 /* CAVAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */; };
-		9136AD791659405200D6F056 /* CAVAlertViewFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8F316583FD900E2CDA1 /* CAVAlertViewFactory.h */; };
 		9136AD7C1659433E00D6F056 /* CAVDemoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136AD7B1659433E00D6F056 /* CAVDemoAlert.m */; };
 		9136AD7E1659436D00D6F056 /* CAVDemoAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136AD7D1659436D00D6F056 /* CAVDemoAlert.xib */; };
+		9140E60F165984DE005C9CF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9140E60D165984DE005C9CF0 /* InfoPlist.strings */; };
+		9140E614165984E7005C9CF0 /* CAVAlertViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C8A8F316583FD900E2CDA1 /* CAVAlertViewFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9140E615165984EF005C9CF0 /* CAVAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9140E6161659852F005C9CF0 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
+		9140E61716598531005C9CF0 /* CAVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */; };
 		91C8A8B816583D8C00E2CDA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B716583D8C00E2CDA1 /* UIKit.framework */; };
 		91C8A8BA16583D8C00E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
 		91C8A8BC16583D8C00E2CDA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */; };
@@ -26,33 +26,19 @@
 		91C8A8CE16583D8C00E2CDA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8CD16583D8C00E2CDA1 /* Default-568h@2x.png */; };
 		91C8A8D116583D8C00E2CDA1 /* CAVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8D016583D8C00E2CDA1 /* CAVViewController.m */; };
 		91C8A8D416583D8C00E2CDA1 /* CAVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8D216583D8C00E2CDA1 /* CAVViewController.xib */; };
-		91C8A8E616583DD900E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
-		91C8A8ED16583DD900E2CDA1 /* CAVAlertViewFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */; };
 		91C8A8F516583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
-		91C8A8F616583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
 		91C8A8FD165840B200E2CDA1 /* CAVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */; };
-		91C8A8FE165840B200E2CDA1 /* CAVAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		91C8A8E316583DD900E2CDA1 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				9136AD791659405200D6F056 /* CAVAlertViewFactory.h in CopyFiles */,
-				9136AD781659404E00D6F056 /* CAVAlertView.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9136AD7416593E1600D6F056 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9136AD7A1659433E00D6F056 /* CAVDemoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVDemoAlert.h; sourceTree = "<group>"; };
 		9136AD7B1659433E00D6F056 /* CAVDemoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAVDemoAlert.m; sourceTree = "<group>"; };
 		9136AD7D1659436D00D6F056 /* CAVDemoAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAVDemoAlert.xib; sourceTree = "<group>"; };
+		9140E609165984DE005C9CF0 /* CAVAlertViewFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAVAlertViewFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9140E60C165984DE005C9CF0 /* CAVAlertViewFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CAVAlertViewFramework-Info.plist"; sourceTree = "<group>"; };
+		9140E60E165984DE005C9CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9140E610165984DE005C9CF0 /* CAVAlertViewFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAVAlertViewFramework-Prefix.pch"; sourceTree = "<group>"; };
 		91C8A8B316583D8C00E2CDA1 /* CAVAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAVAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C8A8B716583D8C00E2CDA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91C8A8B916583D8C00E2CDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,10 +55,6 @@
 		91C8A8CF16583D8C00E2CDA1 /* CAVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAVViewController.h; sourceTree = "<group>"; };
 		91C8A8D016583D8C00E2CDA1 /* CAVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAVViewController.m; sourceTree = "<group>"; };
 		91C8A8D316583D8C00E2CDA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CAVViewController.xib; sourceTree = "<group>"; };
-		91C8A8E516583DD900E2CDA1 /* libCAVAlertViewFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCAVAlertViewFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		91C8A8E916583DD900E2CDA1 /* CAVAlertViewFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAVAlertViewFramework-Prefix.pch"; sourceTree = "<group>"; };
-		91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAVAlertViewFramework.h; sourceTree = "<group>"; };
-		91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAVAlertViewFramework.m; sourceTree = "<group>"; };
 		91C8A8F316583FD900E2CDA1 /* CAVAlertViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVAlertViewFactory.h; sourceTree = "<group>"; };
 		91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAVAlertViewFactory.m; sourceTree = "<group>"; };
 		91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVAlertView.h; sourceTree = "<group>"; };
@@ -80,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9140E603165984DE005C9CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C8A8B016583D8C00E2CDA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,25 +80,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91C8A8E216583DD900E2CDA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9136AD7716593E3E00D6F056 /* CoreGraphics.framework in Frameworks */,
-				9136AD7516593E1600D6F056 /* QuartzCore.framework in Frameworks */,
-				9136AD7316593E1000D6F056 /* UIKit.framework in Frameworks */,
-				91C8A8E616583DD900E2CDA1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9140E60A165984DE005C9CF0 /* CAVAlertViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9140E60B165984DE005C9CF0 /* Supporting Files */,
+			);
+			path = CAVAlertViewFramework;
+			sourceTree = "<group>";
+		};
+		9140E60B165984DE005C9CF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9140E60C165984DE005C9CF0 /* CAVAlertViewFramework-Info.plist */,
+				9140E60D165984DE005C9CF0 /* InfoPlist.strings */,
+				9140E610165984DE005C9CF0 /* CAVAlertViewFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		91C8A8A816583D8C00E2CDA1 = {
 			isa = PBXGroup;
 			children = (
 				91C8A8BD16583D8C00E2CDA1 /* CAVAlertView */,
-				91C8A8E716583DD900E2CDA1 /* CAVAlertViewFramework */,
+				9140E60A165984DE005C9CF0 /* CAVAlertViewFramework */,
 				91C8A8B616583D8C00E2CDA1 /* Frameworks */,
 				91C8A8B416583D8C00E2CDA1 /* Products */,
 			);
@@ -119,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				91C8A8B316583D8C00E2CDA1 /* CAVAlertView.app */,
-				91C8A8E516583DD900E2CDA1 /* libCAVAlertViewFramework.a */,
+				9140E609165984DE005C9CF0 /* CAVAlertViewFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,24 +159,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		91C8A8E716583DD900E2CDA1 /* CAVAlertViewFramework */ = {
-			isa = PBXGroup;
-			children = (
-				91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */,
-				91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */,
-				91C8A8E816583DD900E2CDA1 /* Supporting Files */,
-			);
-			path = CAVAlertViewFramework;
-			sourceTree = "<group>";
-		};
-		91C8A8E816583DD900E2CDA1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				91C8A8E916583DD900E2CDA1 /* CAVAlertViewFramework-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		91C8A8F216583F9E00E2CDA1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +175,40 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9140E604165984DE005C9CF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9140E614165984E7005C9CF0 /* CAVAlertViewFactory.h in Headers */,
+				9140E615165984EF005C9CF0 /* CAVAlertView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9140E608165984DE005C9CF0 /* CAVAlertViewFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9140E611165984DE005C9CF0 /* Build configuration list for PBXNativeTarget "CAVAlertViewFramework" */;
+			buildPhases = (
+				9140E601165984DE005C9CF0 /* ShellScript */,
+				9140E602165984DE005C9CF0 /* Sources */,
+				9140E603165984DE005C9CF0 /* Frameworks */,
+				9140E604165984DE005C9CF0 /* Headers */,
+				9140E605165984DE005C9CF0 /* Resources */,
+				9140E606165984DE005C9CF0 /* ShellScript */,
+				9140E607165984DE005C9CF0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAVAlertViewFramework;
+			productName = CAVAlertViewFramework;
+			productReference = 9140E609165984DE005C9CF0 /* CAVAlertViewFramework.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
 		91C8A8B216583D8C00E2CDA1 /* CAVAlertView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91C8A8DA16583D8C00E2CDA1 /* Build configuration list for PBXNativeTarget "CAVAlertView" */;
@@ -214,23 +225,6 @@
 			productName = CAVAlertView;
 			productReference = 91C8A8B316583D8C00E2CDA1 /* CAVAlertView.app */;
 			productType = "com.apple.product-type.application";
-		};
-		91C8A8E416583DD900E2CDA1 /* CAVAlertViewFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 91C8A8F016583DD900E2CDA1 /* Build configuration list for PBXNativeTarget "CAVAlertViewFramework" */;
-			buildPhases = (
-				91C8A8E116583DD900E2CDA1 /* Sources */,
-				91C8A8E216583DD900E2CDA1 /* Frameworks */,
-				91C8A8E316583DD900E2CDA1 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CAVAlertViewFramework;
-			productName = CAVAlertViewFramework;
-			productReference = 91C8A8E516583DD900E2CDA1 /* libCAVAlertViewFramework.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -255,12 +249,20 @@
 			projectRoot = "";
 			targets = (
 				91C8A8B216583D8C00E2CDA1 /* CAVAlertView */,
-				91C8A8E416583DD900E2CDA1 /* CAVAlertViewFramework */,
+				9140E608165984DE005C9CF0 /* CAVAlertViewFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9140E605165984DE005C9CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9140E60F165984DE005C9CF0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C8A8B116583D8C00E2CDA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,7 +278,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9140E601165984DE005C9CF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		9140E606165984DE005C9CF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		9140E607165984DE005C9CF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		9140E602165984DE005C9CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9140E6161659852F005C9CF0 /* CAVAlertViewFactory.m in Sources */,
+				9140E61716598531005C9CF0 /* CAVAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91C8A8AF16583D8C00E2CDA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,19 +343,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91C8A8E116583DD900E2CDA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91C8A8ED16583DD900E2CDA1 /* CAVAlertViewFramework.m in Sources */,
-				91C8A8F616583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */,
-				91C8A8FE165840B200E2CDA1 /* CAVAlertView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9140E60D165984DE005C9CF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9140E60E165984DE005C9CF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		91C8A8C016583D8C00E2CDA1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -322,6 +373,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9140E612165984DE005C9CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CAVAlertViewFramework/CAVAlertViewFramework-Prefix.pch";
+				INFOPLIST_FILE = "CAVAlertViewFramework/CAVAlertViewFramework-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		9140E613165984DE005C9CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CAVAlertViewFramework/CAVAlertViewFramework-Prefix.pch";
+				INFOPLIST_FILE = "CAVAlertViewFramework/CAVAlertViewFramework-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		91C8A8D816583D8C00E2CDA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,33 +517,17 @@
 			};
 			name = Release;
 		};
-		91C8A8EE16583DD900E2CDA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CAVAlertViewFramework.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CAVAlertViewFramework/CAVAlertViewFramework-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		91C8A8EF16583DD900E2CDA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CAVAlertViewFramework.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CAVAlertViewFramework/CAVAlertViewFramework-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9140E611165984DE005C9CF0 /* Build configuration list for PBXNativeTarget "CAVAlertViewFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9140E612165984DE005C9CF0 /* Debug */,
+				9140E613165984DE005C9CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		91C8A8AD16583D8C00E2CDA1 /* Build configuration list for PBXProject "CAVAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -453,15 +542,6 @@
 			buildConfigurations = (
 				91C8A8DB16583D8C00E2CDA1 /* Debug */,
 				91C8A8DC16583D8C00E2CDA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		91C8A8F016583DD900E2CDA1 /* Build configuration list for PBXNativeTarget "CAVAlertViewFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				91C8A8EE16583DD900E2CDA1 /* Debug */,
-				91C8A8EF16583DD900E2CDA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
