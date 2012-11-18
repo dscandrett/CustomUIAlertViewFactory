@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CAVAlertViewFactory.h"
 
-@interface CAVAlertView : NSObject
+@class CAVAlertView;
+@class CAVAlertViewFactory;
+
+@protocol CAVAlertViewProtocol <NSObject>
+@required
+- (void)alertViewDidChooseButtonAtIndex:(NSInteger)index withObject:(id)obj;
 @end
+
+@interface CAVAlertView : UIView <CAVAlertViewProtocol>
+- (void)showWithCompletion:(CAVAlertViewCompletionBlock)completion;
+@end
+
+

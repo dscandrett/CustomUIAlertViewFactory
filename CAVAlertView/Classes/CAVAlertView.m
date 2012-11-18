@@ -8,6 +8,22 @@
 
 #import "CAVAlertView.h"
 
-@implementation CAVAlertView
+@interface CAVAlertView()
+@property (nonatomic,copy) CAVAlertViewCompletionBlock completionBlock;
+@end
 
+@implementation CAVAlertView
+- (void)alertViewDidChooseButtonAtIndex:(NSInteger)index withObject:(id)obj {
+    
+    // hide window backdrop
+    // hide alert
+    
+    self.completionBlock(index,obj);
+}
+- (void)showWithCompletion:(CAVAlertViewCompletionBlock)completion {
+    self.completionBlock = completion;
+    
+    // add window backdrop
+    // present alert
+}
 @end

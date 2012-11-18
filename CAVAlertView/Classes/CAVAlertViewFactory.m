@@ -17,10 +17,11 @@
 
 //
 
-//
 @interface CAVAlertViewFactory() <UIAlertViewDelegate>
 @property (nonatomic,strong) NSMutableArray *alerts;
 @end
+
+//
 
 @implementation CAVAlertViewFactory
 #pragma mark Standard UI Implementation
@@ -60,8 +61,14 @@
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     BlockAlertView *alert = (BlockAlertView *)alertView;
     if (alert.completionBlock) {
-        alert.completionBlock(buttonIndex);
+        alert.completionBlock(buttonIndex,nil);
     }
+}
+
+#pragma mark Custom UI Convenience
++ (void)showCAVAlert:(CAVAlertView *)customAlert
+      withCompletion:(CAVAlertViewCompletionBlock)completion {
+    [customAlert showWithCompletion:completion];
 }
 
 #pragma mark Singleton

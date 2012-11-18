@@ -8,6 +8,7 @@
 
 #import "CAVViewController.h"
 #import "CAVAlertViewFactory.h"
+#import "CAVDemoAlert.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface CAVViewController ()
@@ -21,13 +22,17 @@
                                        body:@"This is a standard alert"
                                cancelButton:@"Cancel"
                           otherButtonTitles:@[@"Okay",@"Not okay"]
-                                 completion:^(NSInteger selectedButtonIndex) {
+                                 completion:^(NSInteger selectedButtonIndex, id customObj) {
                                      [self updateDisplayForIndex:selectedButtonIndex];
                                  }];
 }
 
 - (IBAction)doShowCustomAlert:(UIButton *)sender {
-    
+    CAVDemoAlert *alert = [CAVDemoAlert demoAlert];
+    [CAVAlertViewFactory showCAVAlert:alert
+                       withCompletion:^(NSInteger selectedButtonIndex, id customObj) {
+                           [self updateDisplayForIndex:selectedButtonIndex];
+                       }];
 }
 
 - (void)updateDisplayForIndex:(NSInteger)index {

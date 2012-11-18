@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void (^CAVAlertViewCompletionBlock)(NSInteger selectedButtonIndex);
+@class CAVAlertView;
+
+typedef void (^CAVAlertViewCompletionBlock)(NSInteger selectedButtonIndex,id customObj);
 
 @interface CAVAlertViewFactory : NSObject
 // standard UI
@@ -18,4 +20,7 @@ typedef void (^CAVAlertViewCompletionBlock)(NSInteger selectedButtonIndex);
                        cancelButton:(NSString *)cancel
                   otherButtonTitles:(NSArray *)others // (NSString *)
                          completion:(CAVAlertViewCompletionBlock)completion;
+// custom UI
++ (void)showCAVAlert:(CAVAlertView *)customAlert
+      withCompletion:(CAVAlertViewCompletionBlock)completion;
 @end

@@ -11,6 +11,10 @@
 		9136AD7516593E1600D6F056 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136AD7416593E1600D6F056 /* QuartzCore.framework */; };
 		9136AD7616593E3500D6F056 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9136AD7416593E1600D6F056 /* QuartzCore.framework */; };
 		9136AD7716593E3E00D6F056 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */; };
+		9136AD781659404E00D6F056 /* CAVAlertView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */; };
+		9136AD791659405200D6F056 /* CAVAlertViewFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8F316583FD900E2CDA1 /* CAVAlertViewFactory.h */; };
+		9136AD7C1659433E00D6F056 /* CAVDemoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136AD7B1659433E00D6F056 /* CAVDemoAlert.m */; };
+		9136AD7E1659436D00D6F056 /* CAVDemoAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136AD7D1659436D00D6F056 /* CAVDemoAlert.xib */; };
 		91C8A8B816583D8C00E2CDA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B716583D8C00E2CDA1 /* UIKit.framework */; };
 		91C8A8BA16583D8C00E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
 		91C8A8BC16583D8C00E2CDA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8BB16583D8C00E2CDA1 /* CoreGraphics.framework */; };
@@ -23,7 +27,6 @@
 		91C8A8D116583D8C00E2CDA1 /* CAVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8D016583D8C00E2CDA1 /* CAVViewController.m */; };
 		91C8A8D416583D8C00E2CDA1 /* CAVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C8A8D216583D8C00E2CDA1 /* CAVViewController.xib */; };
 		91C8A8E616583DD900E2CDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8A8B916583D8C00E2CDA1 /* Foundation.framework */; };
-		91C8A8EB16583DD900E2CDA1 /* CAVAlertViewFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91C8A8EA16583DD900E2CDA1 /* CAVAlertViewFramework.h */; };
 		91C8A8ED16583DD900E2CDA1 /* CAVAlertViewFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8EC16583DD900E2CDA1 /* CAVAlertViewFramework.m */; };
 		91C8A8F516583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
 		91C8A8F616583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */; };
@@ -38,7 +41,8 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				91C8A8EB16583DD900E2CDA1 /* CAVAlertViewFramework.h in CopyFiles */,
+				9136AD791659405200D6F056 /* CAVAlertViewFactory.h in CopyFiles */,
+				9136AD781659404E00D6F056 /* CAVAlertView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		9136AD7416593E1600D6F056 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9136AD7A1659433E00D6F056 /* CAVDemoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVDemoAlert.h; sourceTree = "<group>"; };
+		9136AD7B1659433E00D6F056 /* CAVDemoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAVDemoAlert.m; sourceTree = "<group>"; };
+		9136AD7D1659436D00D6F056 /* CAVDemoAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAVDemoAlert.xib; sourceTree = "<group>"; };
 		91C8A8B316583D8C00E2CDA1 /* CAVAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAVAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C8A8B716583D8C00E2CDA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91C8A8B916583D8C00E2CDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +188,9 @@
 				91C8A8F416583FD900E2CDA1 /* CAVAlertViewFactory.m */,
 				91C8A8FB165840B200E2CDA1 /* CAVAlertView.h */,
 				91C8A8FC165840B200E2CDA1 /* CAVAlertView.m */,
+				9136AD7A1659433E00D6F056 /* CAVDemoAlert.h */,
+				9136AD7B1659433E00D6F056 /* CAVDemoAlert.m */,
+				9136AD7D1659436D00D6F056 /* CAVDemoAlert.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -260,6 +270,7 @@
 				91C8A8CC16583D8C00E2CDA1 /* Default@2x.png in Resources */,
 				91C8A8CE16583D8C00E2CDA1 /* Default-568h@2x.png in Resources */,
 				91C8A8D416583D8C00E2CDA1 /* CAVViewController.xib in Resources */,
+				9136AD7E1659436D00D6F056 /* CAVDemoAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +286,7 @@
 				91C8A8D116583D8C00E2CDA1 /* CAVViewController.m in Sources */,
 				91C8A8F516583FD900E2CDA1 /* CAVAlertViewFactory.m in Sources */,
 				91C8A8FD165840B200E2CDA1 /* CAVAlertView.m in Sources */,
+				9136AD7C1659433E00D6F056 /* CAVDemoAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
