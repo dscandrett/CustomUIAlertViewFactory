@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "CAVAlertViewFactory.h"
 
-@class CAVAlertView;
-
 @protocol CAVAlertViewProtocol <NSObject>
 @required
 - (void)alertViewDidChooseButtonAtIndex:(NSInteger)index withObject:(id)obj;

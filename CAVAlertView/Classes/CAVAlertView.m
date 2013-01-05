@@ -63,8 +63,7 @@
 
 #pragma mark Animation
 - (CAKeyframeAnimation *)bubbleAnimation {
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation
-                                      animationWithKeyPath:@"transform"];
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     
     CATransform3D scale0 = CATransform3DMakeScale(0.2f, 0.2f, 1.0f);
     CATransform3D scale1 = CATransform3DMakeScale(0.5f, 0.5f, 1.0f);

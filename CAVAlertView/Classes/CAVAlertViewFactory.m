@@ -72,8 +72,7 @@
 }
 
 #pragma mark Singleton
-+ (id)sharedCAVAlertViewFactory
-{
++ (CAVAlertViewFactory *)sharedCAVAlertViewFactory {
     static dispatch_once_t onceQueue;
     static CAVAlertViewFactory *_instance = nil;
     
